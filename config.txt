@@ -1,0 +1,38 @@
+#Number of milliseconds to poll the kafka topic
+input.kafka.poll.timeout=100
+
+#Comma separated list of kafka brokers
+input.kafka.bootstrap.servers=localhost:9092
+
+#kafka consumer time out in unit of milliseconds.
+input.kafka.session.timeout.ms=30000
+
+#Kafka Topic names - Comma separated list of topics
+input.adapter.kafka.topic.names=protocol1,protocol2,protocol3,protocol4,protocol5
+
+
+#Kafka Partition names - This is optional if a descriptive name for the partition is required in the name of the parquet file that
+#is generated. If no descriptive name is found, the partition number is used in the file name
+#Topic names used here must match the given topic names in - input.adapter.kafka.topic.names
+
+#Number of seconds to wait and "batch" the records consumed into an output file
+#Topic names used here must match the given topic names in - input.adapter.kafka.topic.names
+input.adapter.protocol1.batch.time=600
+input.adapter.protocol2.batch.time=600
+input.adapter.protocol4.batch.time=600
+input.adapter.protocol3.batch.time=600
+input.adapter.protocol5.batch.time=600
+
+
+
+#Number of records to "batch" the records consumed into an output file
+#Topic names used here must match the given topic names in - input.adapter.kafka.topic.names
+input.adapter.protocol1.batch.records=200000
+input.adapter.protocol2.batch.records=200000
+input.adapter.protocol4.batch.records=200000
+input.adapter.protocol3.batch.records=200000
+input.adapter.protocol5.batch.records=200000
+
+
+#Output Directory on HDFS where the avro files are created
+output.hdfs.directory=hdfs:///test_data/hdfs_loader

@@ -1,0 +1,13 @@
+{
+  "type" : "record",
+  "name" : "baseRecord",
+  "namespace" : "com.testcom5",
+  "fields" :[{"name" : "timestamp"                     ,"type" :["null","long"]   , "default" : null},
+    {"name" : "device_ip_address"             ,"type" :["null","string"] , "default" : null},
+    {"name" : "application_name"              ,"type" :["null","string"] , "default" : null},
+    {"name" : "hcc"                          ,"type" :["null","string"]    , "default" : null},
+    {"name" : "hnc"                          ,"type" :["null","string"]    , "default" : null},
+    {"name" : "ANA" ,"type" :["null","int"] , "default" : null},
+    {"name" : "ANB" ,"type" :["null","int"] , "default" : null}
+  ]
+}
