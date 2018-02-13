@@ -9,7 +9,7 @@
 4. It has been handling five different types of data in five topics named -> protocol1, protocol2, protocol3, protocol4, protocol5. 
    we can add more data types into the existing kafka cluster.
 
-5. It has 64 partitions in each topic, replication factor as 3 and 12hour retention period.
+5. It has 64 partitions in each topic, replication factor as 3 and 12 hour retention period.
 
 6. config.txt and kafka-topics.properties contain more details of kafka configurations.
 
