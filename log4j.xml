@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- !NOTE that xml validation file should be pulled out from log4j jar with
+    specified version -->
+<!DOCTYPE log4j:configuration SYSTEM "./log4j.dtd">
+
+<!-- | For more configuration infromation and examples see the Jakarta Log4j
+    | owebsite: http://jakarta.apache.org/log4j -->
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"
+    debug="false">
+
+    <!-- Appenders -->
+
+    <appender name="Console" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out" />
+        <param name="Threshold" value="INFO" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{DATE}] [%c] [%t] [%p] [%m] %n" />
+        </layout>
+    </appender>
+
+    <appender name="LoadHDFSFileLog" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="${LOG_PATH}/LoadHDFS.log" />
+        <param name="Threshold" value="INFO" />
+        <param name="MaxBackupIndex" value="10" />
+        <param name="MaxFileSize" value="10MB" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[%d{DATE}] [%c] [%t] [%p] [%M:%L] [%m] %n" />
+        </layout>
+    </appender>
+
+
+
+    <logger name="com.pralay.LoadHDFS" additivity="false">
+        <level value="INFO" />
+        <appender-ref ref="LoadHDFSFileLog" />
+    </logger>
+
+
+
+    <root>
+        <level value="INFO" />
+        <appender-ref ref="Console" />
+    </root>
+
+</log4j:configuration>

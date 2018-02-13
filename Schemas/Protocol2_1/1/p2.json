@@ -1,0 +1,34 @@
+{
+  "type" : "record",
+  "name" : "baseRecord",
+  "namespace" : "com.testcom2",
+  "fields" : [ {
+    "name" : "timestamp",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "application_id",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "command_code",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "command",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "session_id",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "result_code",
+    "type" : [ "null", "int" ],
+    "default" : null
+  }, {
+    "name" : "result",
+    "type" : [ "null", "string" ],
+    "default" : null
+  } ]
+}

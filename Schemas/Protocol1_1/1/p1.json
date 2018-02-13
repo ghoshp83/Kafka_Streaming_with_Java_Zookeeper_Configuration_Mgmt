@@ -1,0 +1,40 @@
+{
+  "type" : "record",
+  "name" : "baseRecord",
+  "namespace" : "com.testcom1",
+  "fields" :[{
+    "name" : "StartTime",
+    "type" :["null","long"],
+    "default" : null
+  },{
+    "name" : "EndTime",
+    "type" :["null","long"],
+    "default" : null
+  },{
+    "name" : "APC",
+    "type" :["null","string"] ,
+    "default" : null
+  },{
+    "name" : "UPC",
+    "type" :["null","string"] ,
+    "default" : null
+  },{
+    "name" : "userid"                      ,
+    "type" :["null","long"]   ,
+    "default" : null
+  },{
+    "name" : "username"                    ,
+    "type" :["null","long"]   ,
+    "default" : null
+  },{
+    "name" : "userDep"                      ,
+    "type" :["null","long"]   ,
+    "default" : null
+  },{
+    "name" : "direction"                 ,
+    "type" :["null","string"] ,
+    "default" : null
+  }
+  ]
+
+}
