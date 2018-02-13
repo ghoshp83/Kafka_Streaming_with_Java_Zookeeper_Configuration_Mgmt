@@ -44,3 +44,16 @@
     
     h) fetchingInformationFromZookeeper
     
+13. Configuration management handles any configuration changes dynamically. It takes care of following ->
+
+    a) Initialization 
+    
+    b) Configuration store management : creation, modification, deletion 
+    
+    c) Versioning
+    
+    d) Kafka and Zookeeper integration
+    
+    e) Exception handling
+    
+14. 
