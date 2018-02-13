@@ -56,4 +56,4 @@
     
     e) Exception handling
     
-14. 
+14. Average data volume(for kafka processing engine) of this application is 350 mb/sec.
