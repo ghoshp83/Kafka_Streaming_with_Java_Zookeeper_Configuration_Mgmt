@@ -104,4 +104,8 @@ KafkaToLoadHdfs_Group_protocol2 protocol2                   40         961300395
 
 ```
 
+15. log4j.xml is used for application logging purpose.
 
+16. Output parquet files can be used for business analytics through impala/hive. To avoid any mismatch between application writting and
+    BI tool reading, this application has provided logic to handle "Zero byte" file. While writting is "in-progress", the files won't be
+    visible to actual output directory. Files will be visible to output directory only after writting has completed.
