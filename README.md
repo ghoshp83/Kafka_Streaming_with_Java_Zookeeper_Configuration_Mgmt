@@ -23,8 +23,8 @@
     process more than one partition - This is managed by Kafka as long as all consumers for a particular topic have the same consumer
     group id.
 
-11. AdapterConsumerThread class contains the thread that will create the Kafka consumer and start polling the topic for messages. Messages
-    read from the topic are written out to a file in parquet format.
+11. AdapterConsumerThread class contains the thread that will create the Kafka consumer and start polling the topic for messages.
+    Messages read from the topic are written out to a file in parquet format.
     
 12. InitTopic is the main class to handle kafka management and configuration management. Inside kafka management, it can do ->
     
@@ -44,6 +44,7 @@
     
     h) fetchingInformationFromZookeeper
     
+    
 13. Configuration management handles any configuration changes dynamically. It takes care of following ->
 
     a) Initialization 
@@ -55,5 +56,6 @@
     d) Kafka and Zookeeper integration
     
     e) Exception handling
-    
+
+
 14. Average data volume(for kafka processing engine) of this application is 350 mb/sec.
